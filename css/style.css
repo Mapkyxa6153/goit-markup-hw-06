@@ -688,7 +688,6 @@ textarea {
 }
 
 .form-field {
-  outline: 1px solid salmon;
   display: flex;
   flex-direction: column;
 
@@ -696,9 +695,25 @@ textarea {
 }
 
 .form-policy {
+  display: flex;
   text-align: center;
-  outline: 1px solid goldenrod;
+  justify-content: center;
 }
+.policy-label {
+  margin-left: 8.9px;
+  margin-bottom: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  letter-spacing: 0.01em;
+
+  color: var(--secondary-text-colort);
+}
+/* .form-policy input[type='checkbox'] {
+
+} */
 
 .form-label {
   margin-bottom: 4px;
@@ -711,7 +726,9 @@ textarea {
 
   color: var(--secondary-text-colort);
 }
-
+.policy-label > a {
+  color: var(--akcent-text-color);
+}
 .form-field textarea::placeholder {
   font-size: 12px;
   line-height: 14px;
