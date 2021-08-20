@@ -600,8 +600,10 @@ textarea {
 }
 
 .follow-btn::after {
+  content: '';
+  position: absolute;
   background-image: url(../images/icon/plane.svg);
-  fill: var(--background-color);
+  /* fill: var(--background-color); */
 }
 
 /* portfolio page */
@@ -817,8 +819,10 @@ textarea {
 .input-field:focus ~ .form-icon {
   fill: var(--akcent-text-color);
 }
-.input-field:focus {
-  border: var(--akcent-text-color);
+
+.input-field:focus,
+.comment:focus {
+  border: 5px solid var(--akcent-text-color);
 }
 
 .comment {
@@ -828,7 +832,6 @@ textarea {
   box-sizing: border-box;
   border-radius: 4px;
 }
-
 .form-submit-btn {
   position: absolute;
   bottom: 40px;
