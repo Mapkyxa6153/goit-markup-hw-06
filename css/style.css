@@ -578,6 +578,7 @@ textarea {
 }
 
 .follow-btn {
+  position: relative;
   margin-left: 12px;
   margin-top: 48px;
   border: 0px;
@@ -586,6 +587,7 @@ textarea {
   height: 50px;
   font-style: Bold;
   font-size: 16px;
+  padding-right: 50px;
 
   color: var(--background-color);
   font-style: 400;
@@ -614,8 +616,8 @@ textarea {
 
 .follow-icon {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 170px;
+  bottom: 40px;
 }
 
 /* portfolio page */
