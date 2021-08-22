@@ -474,7 +474,7 @@ textarea {
 
 /* footer */
 .footer {
-  padding: 60px;
+  padding: 60px 0;
   background-color: var(--background-color-secondary);
 }
 .logo-footer {
@@ -514,6 +514,7 @@ textarea {
 
 .container.downside {
   display: flex;
+  align-items: baseline;
 }
 .follow {
   color: var(--background-color);
@@ -550,6 +551,8 @@ textarea {
   flex-direction: column;
 }
 .footer-form-div {
+  display: flex;
+  align-items: flex-end;
   margin-top: 12px;
   margin-left: auto;
 }
@@ -584,19 +587,14 @@ textarea {
   align-items: center;
   margin-left: 12px;
 
-  margin-top: 48px;
   border: 0px;
   border-radius: 4px;
   width: 200px;
   height: 50px;
-  font-style: Bold;
-  font-size: 16px;
-
   color: var(--background-color);
-  font-style: 400;
   font-weight: 700;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
@@ -752,7 +750,7 @@ textarea {
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
-  text-align: center;
+
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
@@ -762,6 +760,9 @@ textarea {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+}
+.form-field:last-child {
+  margin-bottom: 0;
 }
 
 .form-field .wrapper {
@@ -776,7 +777,7 @@ textarea {
 }
 .policy-label {
   position: relative;
-  margin-left: 9px;
+  padding-left: 20px;
   margin-bottom: 30px;
   font-weight: 400;
   font-size: 12px;
@@ -805,13 +806,14 @@ textarea {
 .checkbox-icon {
   position: absolute;
   top: 50%;
-  left: -20px;
+  left: 0;
   transform: translateY(-50%);
   width: 15px;
   height: 15px;
   border-radius: 2px;
   display: inline-block;
   border: 1px solid var(--primary-text-color);
+  cursor: pointer;
 }
 .checkbox:checked + .checkbox-icon {
   background-color: var(--akcent-text-color);
@@ -877,6 +879,7 @@ textarea {
   background: var(--akcent-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .close-btn {
